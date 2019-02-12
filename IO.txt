@@ -1,0 +1,23 @@
+//input优化
+
+//int的读取
+inline int read() {
+	int x = 0, f = 1; 
+	char c = getchar();
+	while (c < '0' || c > '9') { if (c == '-') f = -1; c = getchar(); }
+	while (c >= '0' && c <= '9') { x = x * 10 + c - '0'; c = getchar(); }
+	return x * f;
+}
+
+//string的读取
+inline string read() {
+	char ch = getchar();
+	string str = "";
+	while (!((ch >= 'a') && (ch <= 'z')))
+		ch = getchar();
+	while ((ch >= 'a') && (ch <= 'z'))
+		str += ch, ch = getchar();
+	return str;
+}
+
+//用的时候直接a=read();

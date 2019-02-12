@@ -28,4 +28,34 @@
     }
     ```
 
+- 不用每次清空数组，use 
+
+  - ```
+    int TRUTH = 1;
+    
+    while(){
+        ....
+        TRUTH++;
+    }
+    visit: == TRUTH, unvisited: != TRUTH
+    ```
+
+- `sstream`
+
+  - Usage: split a string into by '\r
+
+  - ```c++
+    #include<sstream>
+    
+    stringstream ss;	// init
+    string line;
+    getline(cin,line);
+    
+    ss.clear();			// 清空
+    ss.str(line);		//  put string line into sstream
+    
+    
+    
+    ```
+
     
