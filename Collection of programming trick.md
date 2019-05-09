@@ -53,9 +53,8 @@
     
     ss.clear();			// 清空
     ss.str(line);		//  put string line into sstream
-    
-    
-    
     ```
 
-    
+- `\r and \n`
+  - https://blog.csdn.net/a130737/article/details/35231381
+
